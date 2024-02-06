@@ -110,9 +110,9 @@ const Contact = () => {
               });
             }}
             className={`mt-10 ps-3 pe-3 pt-2 pb-2 bg-[#2C3E50] ${
-              userName == "" &&
-              userAge == "" &&
-              userEmail == "" &&
+              userName == "" ||
+              userAge == "" ||
+              userEmail == "" ||
               userPassword == ""
                 ? "hover:translate-x-44"
                 : "translate-x-0"
