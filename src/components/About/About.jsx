@@ -1,9 +1,14 @@
+import { Helmet } from "react-helmet";
 import { FaStar } from "react-icons/fa";
 
 const About = () => {
   return (
     <>
       <div className="h-screen flex flex-col justify-center items-center  ">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>About</title>
+        </Helmet>
         <h2 className="text-[40px] font-bold text-white">ABOUT COMPONENT</h2>
         <div className="flex items-center mt-2 mb-4">
           <div className="w-20 me-3 h-1 bg-white"></div>

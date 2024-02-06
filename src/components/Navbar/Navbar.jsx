@@ -15,18 +15,6 @@ const Navbar = () => {
   }, []);
 
   const location = useLocation();
-  if ("/about" == location.pathname) {
-    document.title = "About";
-  } else if ("/portfolio" == location.pathname) {
-    document.title = "Portfolio";
-  } else if ("/contact" == location.pathname) {
-    document.title = "Contact";
-  } else if ("/" == location.pathname) {
-    document.title = "Home";
-  } else {
-    document.title = "Error 404";
-  }
-
   return (
     <>
       <nav

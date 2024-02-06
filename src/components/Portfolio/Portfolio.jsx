@@ -1,18 +1,16 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { FaPlus, FaStar } from "react-icons/fa6";
+
+import image1 from "../../assets/poert1.png";
+import image2 from "../../assets/port2.png";
+import image3 from "../../assets/port3.png";
 
 const Portfolio = () => {
   const [imgCurrent, setUrl] = useState("");
   const [outImgae, setoutImgae] = useState("false");
 
-  const imgArray = [
-    "src/assets/poert1.png",
-    "src/assets/port2.png",
-    "src/assets/port3.png",
-    "src/assets/poert1.png",
-    "src/assets/port2.png",
-    "src/assets/port3.png",
-  ];
+  const imgArray = [image1, image2, image3, image1, image2, image3];
   function closedImg() {
     setoutImgae(false);
   }
@@ -20,6 +18,11 @@ const Portfolio = () => {
   return (
     <>
       <div className=" pb-24 bg-gradient-to-b from-[#2C3E50]  pt-32 to-[#bdc3c7] flex flex-col justify-center items-center relative ">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Portfolio</title>
+        </Helmet>
+
         <h2 className="text-[40px] font-bold mt-7 text-white">
           PORTFOLIO COMPONENT
         </h2>

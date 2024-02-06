@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { FaStar } from "react-icons/fa";
 import Swal from "sweetalert2";
 
@@ -11,6 +12,11 @@ const Contact = () => {
   return (
     <>
       <div className="h-screen bg-gradient-to-b from-[#2C3E50] to-[#bdc3c7] flex flex-col justify-center items-center">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Contact</title>
+        </Helmet>
+
         <h2 className="text-[40px] font-bold text-white">CONATCT COMPONENT</h2>
         <div className="flex items-center mt-2 mb-4">
           <div className="w-20 me-3 h-1 bg-white"></div>
