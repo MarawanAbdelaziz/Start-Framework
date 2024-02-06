@@ -22,7 +22,7 @@ const Navbar = () => {
   } else if ("/contact" == location.pathname) {
     document.title = "Contact";
   } else if ("/" == location.pathname) {
-    document.title = "START FRAMEWORK";
+    document.title = "Home";
   } else {
     document.title = "Error 404";
   }
