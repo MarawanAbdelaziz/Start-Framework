@@ -56,7 +56,7 @@ const Contact = () => {
             </h4>
 
             <input
-              className=" w-full bg-transparent placeholder-black text-white focus:outline-none border-b rounded-md pt-2 pb-4"
+              className=" w-full bg-transparent placeholder-black text-white focus:outline-none outline-none border-b border-white rounded-md pt-2 pb-4"
               type="number"
               onInput={(event) => {
                 setUserAge(event.target.value);
