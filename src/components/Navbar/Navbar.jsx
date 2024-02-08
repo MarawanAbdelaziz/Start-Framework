@@ -49,9 +49,11 @@ const NavBar = () => {
           />
 
           <Navbar.Collapse
-            className={`${
-              isScrolled == 0 ? "translate-y-5" : "translate-y-0"
-            } transition-all duration-500 md:felx  justify-center items-center bg-[#2C3E50] md:order-2`}
+            className={`absolute md:static transition-all duration-500  ${
+              isScrolled == 0
+                ? "md:translate-y-5 translate-y-36"
+                : "md:translate-y-0 translate-y-[126px]"
+            } left-0 right-0 md:left-auto md:right-auto md:flex  justify-center items-center bg-[#2C3E50] md:order-2`}
           >
             <Link
               to={"about"}

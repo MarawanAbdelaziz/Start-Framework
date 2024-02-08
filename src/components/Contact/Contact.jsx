@@ -37,7 +37,7 @@ const Contact = () => {
             </h4>
 
             <input
-              className=" w-full bg-transparent placeholder-black text-white border-0 border-b border-white rounded-md pt-2 pb-4"
+              className="w-full bg-transparent placeholder-black text-white border-0 border-b  border-white rounded-md pt-2 pb-4"
               type="text"
               onInput={(event) => {
                 setUserName(event.target.value);
@@ -84,7 +84,6 @@ const Contact = () => {
               placeholder="User email"
             />
           </div>
-
           <div className="mt-2">
             <h4
               className={`  ${
