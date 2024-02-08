@@ -37,7 +37,7 @@ const Contact = () => {
             </h4>
 
             <input
-              className=" w-full bg-transparent placeholder-black text-white focus:outline-none border-b rounded-md pt-2 pb-4"
+              className=" w-full bg-transparent placeholder-black text-white border-0 border-b border-white rounded-md pt-2 pb-4"
               type="text"
               onInput={(event) => {
                 setUserName(event.target.value);
@@ -56,7 +56,7 @@ const Contact = () => {
             </h4>
 
             <input
-              className=" w-full bg-transparent placeholder-black text-white focus:outline-none outline-none border-b border-white rounded-md pt-2 pb-4"
+              className=" w-full bg-transparent placeholder-black text-white  border-0 border-b border-white rounded-md pt-2 pb-4"
               type="number"
               onInput={(event) => {
                 setUserAge(event.target.value);
@@ -76,7 +76,7 @@ const Contact = () => {
               User email:
             </h4>
             <input
-              className=" w-full bg-transparent placeholder-black text-white focus:outline-none border-b rounded-md pt-2 pb-4"
+              className=" w-full bg-transparent placeholder-black text-white focus:outline-none border-0 border-b border-white rounded-md pt-2 pb-4"
               type="email"
               onInput={(event) => {
                 setUserEmail(event.target.value);
@@ -96,7 +96,7 @@ const Contact = () => {
               User password:
             </h4>
             <input
-              className="w-full bg-transparent placeholder-black text-white focus:outline-none border-b rounded-md pt-2 pb-4"
+              className="w-full bg-transparent placeholder-black text-white border-0 border-b border-white rounded-md pt-2 pb-4"
               type="Password"
               onInput={(event) => {
                 setUserPassword(event.target.value);
