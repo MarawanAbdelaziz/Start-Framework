@@ -23,7 +23,7 @@ const Portfolio = () => {
           <title>Portfolio</title>
         </Helmet>
 
-        <h2 className="text-[40px] font-bold mt-7 text-white">
+        <h2 className="text-[27.85px] md:text-[40px] text-nowrap font-bold mt-7 text-white">
           PORTFOLIO COMPONENT
         </h2>
 

@@ -12,7 +12,9 @@ const StartFramework = () => {
 
         <img className="w-[70%]" src={`${img1}`} alt="" />
 
-        <h2 className="text-[40px] font-bold mt-5">START FRAMEWORK</h2>
+        <h2 className="md:text-[40px] text-[27.85px] font-bold mt-5">
+          START FRAMEWORK
+        </h2>
         <div className="flex items-center mt-2 mb-4">
           <div className="w-24 me-3 h-1 bg-white"></div>
           <FaStar className=" text-white text-xl " />

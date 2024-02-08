@@ -35,7 +35,7 @@ const NavBar = () => {
                 isScrolled == 0
                   ? "md:translate-y-5  translate-y-4"
                   : "md:translate-y-0 translate-y-0"
-              } transition-all duration-500 self-center ms-3 md:ms-0 text-[27px] md:text-[32px] font-bold whitespace-nowrap dark:text-white`}
+              } transition-all duration-500 self-center ms-3 md:ms-0 text-[24.71px] md:text-[32px] font-bold whitespace-nowrap dark:text-white`}
             >
               START FRAMEWORK
             </span>
@@ -45,11 +45,11 @@ const NavBar = () => {
               isScrolled == 0
                 ? "md:translate-y-5  translate-y-4"
                 : "md:translate-y-0 translate-y-0"
-            } transition-all duration-500 `}
+            } transition-all duration-500  me-3`}
           />
 
           <Navbar.Collapse
-            className={`absolute md:static transition-all duration-500  ${
+            className={`absolute md:static transition-all duration-500 ${
               isScrolled == 0
                 ? "md:translate-y-5 translate-y-36"
                 : "md:translate-y-0 translate-y-[126px]"
@@ -63,7 +63,7 @@ const NavBar = () => {
                   : "p-2"
               }`}
             >
-              <Navbar.Link className="block py-2 px-3 hover:bg-inherit text-white font-bold md:p-0 ">
+              <Navbar.Link className="block py-2 px-3 hover:bg-inherit text-[16px] text-white font-bold md:p-0 ">
                 ABOUT
               </Navbar.Link>
             </Link>
@@ -75,7 +75,7 @@ const NavBar = () => {
                   : "p-2"
               }`}
             >
-              <Navbar.Link className="block py-2 px-3 md:p-0 hover:bg-inherit text-white font-bold">
+              <Navbar.Link className="block py-2 px-3 md:p-0 hover:bg-inherit text-[16px] text-white font-bold">
                 PORTFOLIO
               </Navbar.Link>
             </Link>
@@ -87,7 +87,7 @@ const NavBar = () => {
                   : "p-2"
               }`}
             >
-              <Navbar.Link className="block py-2 px-3 md:p-0 hover:bg-inherit text-white font-bold">
+              <Navbar.Link className="block py-2 px-3 md:p-0 hover:bg-inherit text-[16px] text-white font-bold">
                 CONTACT
               </Navbar.Link>
             </Link>

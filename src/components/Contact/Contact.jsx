@@ -17,7 +17,9 @@ const Contact = () => {
           <title>Contact</title>
         </Helmet>
 
-        <h2 className="text-[40px] font-bold text-white">CONATCT COMPONENT</h2>
+        <h2 className=" text-[27.85px] md:text-[40px] font-bold text-nowrap text-white">
+          CONATCT COMPONENT
+        </h2>
         <div className="flex items-center mt-2 mb-4">
           <div className="w-20 me-3 h-1 bg-white"></div>
           <FaStar className=" text-white text-xl " />
@@ -37,7 +39,8 @@ const Contact = () => {
             </h4>
 
             <input
-              className="w-full bg-transparent placeholder-black text-white border-0 border-b  border-white rounded-md pt-2 pb-4"
+              style={{ boxShadow: "none" }}
+              className="w-full bg-transparent placeholder-black text-white border-0 border-b focus:border-white border-white rounded-md pt-2 pb-4"
               type="text"
               onInput={(event) => {
                 setUserName(event.target.value);
@@ -48,7 +51,7 @@ const Contact = () => {
 
           <div className="mt-2">
             <h4
-              className={`  ${
+              className={`${
                 userAge == "" ? "-translate-x-16" : "translate-x-0"
               } ${userAge == "" ? "opacity-0" : "opacity-100"}   duration-700 `}
             >
@@ -56,7 +59,8 @@ const Contact = () => {
             </h4>
 
             <input
-              className=" w-full bg-transparent placeholder-black text-white  border-0 border-b border-white rounded-md pt-2 pb-4"
+              style={{ boxShadow: "none" }}
+              className=" w-full bg-transparent placeholder-black text-white  border-0 border-b focus:border-white border-white rounded-md pt-2 pb-4"
               type="number"
               onInput={(event) => {
                 setUserAge(event.target.value);
@@ -76,7 +80,8 @@ const Contact = () => {
               User email:
             </h4>
             <input
-              className=" w-full bg-transparent placeholder-black text-white focus:outline-none border-0 border-b border-white rounded-md pt-2 pb-4"
+              style={{ boxShadow: "none" }}
+              className=" w-full bg-transparent placeholder-black text-white focus:outline-none border-0 border-b focus:border-white border-white rounded-md pt-2 pb-4"
               type="email"
               onInput={(event) => {
                 setUserEmail(event.target.value);
@@ -84,6 +89,7 @@ const Contact = () => {
               placeholder="User email"
             />
           </div>
+
           <div className="mt-2">
             <h4
               className={`  ${
@@ -95,7 +101,8 @@ const Contact = () => {
               User password:
             </h4>
             <input
-              className="w-full bg-transparent placeholder-black text-white border-0 border-b border-white rounded-md pt-2 pb-4"
+              style={{ boxShadow: "none" }}
+              className="w-full bg-transparent placeholder-black text-white border-0 border-b focus:border-white border-white rounded-md pt-2 pb-4"
               type="Password"
               onInput={(event) => {
                 setUserPassword(event.target.value);
